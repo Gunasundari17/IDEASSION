@@ -1,0 +1,39 @@
+1.PRINT POSITION OF ADDED VALUES:
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        public static void Main(string[] args)
+        {
+            int[] a = { 1, 2, 3, 4, 5 };
+            int b = 5;
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = i + 1; j < a.Length; j++)
+                {
+                    if (a[i] + a[j] == b)
+                    {
+                        Console.WriteLine("Index position" + i  + "and"   +  j);
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+
+    
+
+

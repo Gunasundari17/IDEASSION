@@ -1,0 +1,41 @@
+2.TO PRINT PRIME NUMBERS:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace prime_numbers
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the limit");
+            int limit = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Prime numbers are", limit);
+          
+            for(int i = 2 ; i <=limit; i++)
+            {
+                bool isPrimeNumber = false;
+                for (int j=2;j<i;j++)
+                {  
+                    if(i%j == 0)
+                        {
+                        isPrimeNumber = true;
+                        break;
+                        }
+                }
+
+                if(isPrimeNumber ==false)
+                {  
+                    Console.WriteLine(i);
+                    
+                }  
+            }
+            Console.ReadLine();
+        }
+    }
+}
